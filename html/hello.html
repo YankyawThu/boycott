@@ -98,7 +98,7 @@
             },
             created() {
                 axios
-                    .get('http://creatorcreated.000webhostapp.com/api/all')
+                    .get('https://creatorcreated.000webhostapp.com/api/all')
                     .then(response => (
                         this.boycott_data = response.data
                     ))
@@ -106,7 +106,7 @@
             methods: {
                 filter() {
                     axios
-                        .get('http://creatorcreated.000webhostapp.com/api/select/'+this.keyword)
+                        .get('https://creatorcreated.000webhostapp.com/api/select/'+this.keyword)
                         .then(response => (
                             this.boycott_data = response.data
                         ))
