@@ -69,7 +69,7 @@
                                 <td colspan="3" class="truncate text-sm py-2 bg-gray-800 text-gray-50 text-center"><span class="text_animation"><i class="fas fa-exclamation text-red-500"></i> Barcode တွင် <span class="font-semibold">69</span> နှင့်စပါက China products boycott လုပ်ရမည်ဖြစ်သည်။</span></td>
                             </tr> -->
                             <tr v-for="(data,index) in boycott_data" :key="index" class="border-b">
-                                <td><a :href="'/boycott_photo/'+data.photo" target="blank"><img :src="'/boycott_photo/'+data.photo" :alt="data.photo" class="w-36 h-36 m-auto p-3"></a></td>
+                                <td><a :href="'boycott_photo/'+data.photo" target="blank"><img :src="'boycott_photo/'+data.photo" :alt="data.photo" class="w-36 h-36 m-auto p-3"></a></td>
                                 <td class="text-center">{{ data.name }}</td>
                                 <td class="text-center">{{ data.country }}</td>
                             </tr>
