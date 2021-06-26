@@ -43,7 +43,7 @@
                                 <option value="Retail">Retail</option>
                                 <option value="Trading companies">Trading companies</option>
                                 <option value="Transport">Transport</option>
-                            </select>                        
+                            </select>                   
                             <button><i class="fas fa-search p-4 focus:outline-none hover:bg-gray-300 rounded-r-lg"></i></button>
                         </form>
                     </div>
@@ -90,16 +90,16 @@
                     cate: '',
                     keyword: null,
                     column: 'name',
-                    items: []
+                    items: [],
                 }
             },
             computed: {
                 rows() {
                     return this.items.filter(item => {
                         let props = (this.keyword && this.column) ? [item[this.column]] : Object.values(item)
-                        return props.some(prop => !this.keyword || ((typeof prop === 'string') ? (prop).toLowerCase().includes((this.keyword).toLowerCase()) : (prop).toLowerCase().toString(10).includes(this.keyword)))
+                        return props.some(prop => !this.keyword || ((typeof prop === 'string') ? (prop).toLowerCase().includes((this.keyword).toLowerCase()) : (prop).toLowerCase().toString(10).includes((this.keyword).toLowerCase())))
                     })
-                }
+                },
             },
             created() {
                 axios
