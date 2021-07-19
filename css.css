@@ -29,3 +29,39 @@ select {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.btn {
+  background-image: linear-gradient(to right, #7da7e7, #81e4db);
+}
+.btn1 {
+  background-image: linear-gradient(to right, #e77d94, #e481e4);
+}
+.btn2 {
+  background-image: linear-gradient(to right, #7dd7e7, #81e4a7);
+}
+.btn3 {
+  background-image: linear-gradient(to right, #7de7ad, #cfe481);
+}
+.btn4 {
+  background-image: linear-gradient(to right, #ae7de7, #81e48e);
+}
+.btn5 {
+  background-image: linear-gradient(to right, #7de0e7, #e4a081);
+}
+.btn6 {
+  background-image: linear-gradient(to right, #e77dd9, #81e1e4);
+}
+.btn7 {
+  background-image: linear-gradient(to right, #e7ce7d, #81c8e4);
+}
+.nav {
+  background-image: linear-gradient(to right, #7da7e7, #81e4db);
+  font-family: "Jost";
+}
+.nav-link a {
+  color: rgb(70, 70, 70);
+}
+.nav-link a:hover {
+  text-decoration: underline dotted;
+  text-underline-offset: 0.3em;
+  color: black;
+}
